@@ -3,9 +3,30 @@
   justify-content: center;
   align-items: center;
 }
+.heading {
+  display: grid;
+  justify-content: center;
+}
+.boxLine {
+  border: 1px solid rgb(213, 209, 209);
+  margin: 10px;
+  /* position: relative; */
+}
+.headingContent {
+  position: relative;
+  font-family: "Arial", sans-serif;
+  text-align: center;
+  color: #ff6b82;
+  font-weight: 600;
+  top: -25px;
+  margin-left: 100px;
+  width: 250px;
+  font-size: 25px;
+  background-color: white;
+}
 .radioboxContainer {
   position: relative;
-  border: 2px solid black;
+  border: 2px solid rgb(213, 209, 209);
   padding: 40px;
   margin: 10px;
   cursor: pointer;
@@ -88,7 +109,7 @@
   text-decoration: line-through;
   margin-top: 5px;
   font-size: 15px;
-  color: rgb(146, 143, 143);
+  color: rgb(188, 187, 187);
 }
 
 .unitsection {
@@ -103,4 +124,32 @@
   padding-right: 35px;
   padding-top: 4px;
   padding-bottom: 4px;
+}
+.totalDelivery {
+  display: flex;
+  margin: 12px;
+  font-family: "Arial", sans-serif;
+  font-size: 18px;
+  justify-content: space-between;
+}
+.freeDeleivery {
+  color: #ff6b82;
+}
+.button {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-family: sans-serif;
+  border: 1px solid #ff6b82;
+  border-radius: 4px;
+  background-color: #ff6b82;
+  color: white;
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+}
+.plus {
+  font-size: 25px;
 }
