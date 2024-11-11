@@ -65,8 +65,8 @@ input[type="radio"]:checked:after {
 }
 .legend {
   position: absolute;
-  top: -10px;
-  left: 300px;
+  top: -11px;
+  left: 270px;
   text-align: center;
   width: 150px;
   padding: 5px 0;
