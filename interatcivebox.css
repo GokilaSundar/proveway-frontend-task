@@ -41,7 +41,7 @@ input[type="radio"]:after {
   background-color: white;
   content: "";
   display: inline-block;
-  border: 2px solid #e1e1e1;
+  border: 2px solid #e3e3e3;
 }
 
 input[type="radio"]:checked:after {
@@ -375,6 +375,13 @@ input[type="radio"]:checked:after {
   }
 }
 @media only screen and (max-width: 360px) {
+  .price {
+    float: right;
+    margin-left: 25px;
+    font-family: sans-serif;
+    position: relative;
+    top: -5px;
+  }
   .legend {
     position: absolute;
     top: -11px;
