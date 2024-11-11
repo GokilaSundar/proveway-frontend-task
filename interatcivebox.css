@@ -4,7 +4,7 @@
   align-items: center;
 }
 .boxLine {
-  border: 1px solid rgb(213, 209, 209);
+  border: 1px solid #e3e3e3;
   margin: 10px;
 }
 .headingContent {
@@ -21,12 +21,16 @@
 }
 .radioboxContainer {
   position: relative;
-  border: 2px solid rgb(213, 209, 209);
-  padding: 50px;
+  border: 2px solid #e3e3e3;
+  padding: 35px;
   margin: 10px;
   cursor: pointer;
 }
-
+#container .radioboxContainer:nth-of-type(2) {
+  border: 2px solid #ff6b82;
+  cursor: pointer;
+  background-color: #fff9fa;
+}
 input[type="radio"]:after {
   width: 15px;
   height: 15px;
@@ -34,10 +38,10 @@ input[type="radio"]:after {
   top: -3px;
   left: -1px;
   position: relative;
-  background-color: #d1d3d1;
+  background-color: white;
   content: "";
   display: inline-block;
-  border: 2px solid #d1d3d1;
+  border: 2px solid #e1e1e1;
 }
 
 input[type="radio"]:checked:after {
@@ -61,18 +65,37 @@ input[type="radio"]:checked:after {
 }
 .legend {
   position: absolute;
-  top: -2px;
+  top: -10px;
   left: 300px;
   text-align: center;
   width: 150px;
   padding: 5px 0;
   border: 1px solid #ff6b82;
-  border-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
   background-color: #ff6b82;
   font-weight: bold;
   font-family: "Arial", sans-serif;
   color: white;
   font-size: 16px;
+}
+.triangle1 {
+  width: 0;
+  height: 0;
+  position: absolute;
+  right: 188px;
+  top: -10.6px;
+  border-left: 9.6px solid transparent;
+  border-bottom: 11px solid #e14d64;
+}
+.triangle2 {
+  width: 0;
+  height: 0;
+  position: absolute;
+  right: 27.5px;
+  top: -10.6px;
+  border-right: 10px solid transparent;
+  border-bottom: 11px solid #e14d64;
 }
 .offer {
   margin-left: 5px;
@@ -100,7 +123,7 @@ input[type="radio"]:checked:after {
   text-decoration: line-through;
   margin-top: 5px;
   font-size: 15px;
-  color: rgb(188, 187, 187);
+  color: #e3e3e3;
 }
 .dropdownTitle {
   font-family: sans-serif;
@@ -132,6 +155,7 @@ input[type="radio"]:checked:after {
   + .dropDownSection {
   display: block;
   margin-top: 20px;
+  margin-left: 33px;
 }
 .price {
   float: right;
@@ -191,7 +215,32 @@ input[type="radio"]:checked:after {
 .plus {
   font-size: 25px;
 }
+.pumper {
+  font-style: italic;
+  text-align: end;
+  margin: 10px;
+  color: #a6a6a6;
+  font-family: "Arial", sans-serif;
+}
 
+@media only screen and (max-width: 1015px) {
+  .legend {
+    position: absolute;
+    top: -11px;
+    left: 270px;
+    text-align: center;
+    width: 150px;
+    padding: 5px 0;
+    border: 1px solid #ff6b82;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    background-color: #ff6b82;
+    font-weight: bold;
+    font-family: "Arial", sans-serif;
+    color: white;
+    font-size: 16px;
+  }
+}
 @media only screen and (max-width: 700px) {
   .headingContent {
     position: relative;
@@ -207,8 +256,8 @@ input[type="radio"]:checked:after {
   }
   .radioboxContainer {
     position: relative;
-    border: 2px solid rgb(213, 209, 209);
-    padding: 40px 20px;
+    border: 2px solid #e3e3e3;
+    /* padding: 30px 20px; */
     margin: 10px;
     cursor: pointer;
   }
@@ -221,13 +270,14 @@ input[type="radio"]:checked:after {
   }
   .legend {
     position: absolute;
-    top: -2px;
-    left: 180px;
+    top: -11px;
+    left: 200px;
     text-align: center;
     width: 150px;
     padding: 5px 0;
     border: 1px solid #ff6b82;
-    border-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
     background-color: #ff6b82;
     font-weight: bold;
     font-family: "Arial", sans-serif;
@@ -258,13 +308,14 @@ input[type="radio"]:checked:after {
   }
   .legend {
     position: absolute;
-    top: -2px;
-    left: 150px;
+    top: -11px;
+    left: 175.5px;
     text-align: center;
     width: 150px;
     padding: 5px 0;
     border: 1px solid #ff6b82;
-    border-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
     background-color: #ff6b82;
     font-weight: bold;
     font-family: "Arial", sans-serif;
@@ -273,6 +324,31 @@ input[type="radio"]:checked:after {
   }
 }
 
+@media only screen and (max-width: 400px) {
+  .price {
+    float: right;
+    margin-left: 25px;
+    font-family: sans-serif;
+    position: relative;
+    top: -29px;
+  }
+  .legend {
+    position: absolute;
+    top: -11px;
+    left: 159px;
+    text-align: center;
+    width: 150px;
+    padding: 5px 0;
+    border: 1px solid #ff6b82;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    background-color: #ff6b82;
+    font-weight: bold;
+    font-family: "Arial", sans-serif;
+    color: white;
+    font-size: 16px;
+  }
+}
 @media only screen and (max-width: 370px) {
   .price {
     float: right;
@@ -280,5 +356,64 @@ input[type="radio"]:checked:after {
     font-family: sans-serif;
     position: relative;
     top: -29px;
+  }
+  .legend {
+    position: absolute;
+    top: -11px;
+    left: 140px;
+    text-align: center;
+    width: 150px;
+    padding: 5px 0;
+    border: 1px solid #ff6b82;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    background-color: #ff6b82;
+    font-weight: bold;
+    font-family: "Arial", sans-serif;
+    color: white;
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .legend {
+    position: absolute;
+    top: -11px;
+    left: 130px;
+    text-align: center;
+    width: 150px;
+    padding: 5px 0;
+    border: 1px solid #ff6b82;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    background-color: #ff6b82;
+    font-weight: bold;
+    font-family: "Arial", sans-serif;
+    color: white;
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .price {
+    float: right;
+    margin-left: 25px;
+    font-family: sans-serif;
+    position: relative;
+    top: -29px;
+  }
+  .legend {
+    position: absolute;
+    top: -11px;
+    left: 118px;
+    text-align: center;
+    width: 150px;
+    padding: 5px 0;
+    border: 1px solid #ff6b82;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    background-color: #ff6b82;
+    font-weight: bold;
+    font-family: "Arial", sans-serif;
+    color: white;
+    font-size: 16px;
   }
 }
