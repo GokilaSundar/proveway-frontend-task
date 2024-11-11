@@ -4,7 +4,7 @@ radiobutton.forEach((radio) => {
 
   radio.addEventListener("change", () => {
     radioboxes.forEach((container) => {
-      container.style.border = "2px solid black";
+      container.style.border = "2px solid rgb(213, 209, 209)";
       container.style.backgroundColor = "";
     });
     if (radio.checked) {
