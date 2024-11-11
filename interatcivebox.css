@@ -217,6 +217,7 @@ input[type="radio"]:checked:after {
     margin-left: 50px;
     font-family: sans-serif;
     position: relative;
+    top: -5px;
   }
   .legend {
     position: absolute;
@@ -253,6 +254,7 @@ input[type="radio"]:checked:after {
     margin-left: 25px;
     font-family: sans-serif;
     position: relative;
+    top: -4px;
   }
   .legend {
     position: absolute;
@@ -268,5 +270,15 @@ input[type="radio"]:checked:after {
     font-family: "Arial", sans-serif;
     color: white;
     font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  .price {
+    float: right;
+    margin-left: 25px;
+    font-family: sans-serif;
+    position: relative;
+    top: -29px;
   }
 }
