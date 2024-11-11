@@ -10,7 +10,6 @@
 .boxLine {
   border: 1px solid rgb(213, 209, 209);
   margin: 10px;
-  /* position: relative; */
 }
 .headingContent {
   position: relative;
@@ -19,7 +18,7 @@
   color: #ff6b82;
   font-weight: 600;
   top: -25px;
-  margin-left: 100px;
+  margin-left: 120px;
   width: 250px;
   font-size: 25px;
   background-color: white;
@@ -27,20 +26,47 @@
 .radioboxContainer {
   position: relative;
   border: 2px solid rgb(213, 209, 209);
-  padding: 40px;
+  padding: 50px;
   margin: 10px;
   cursor: pointer;
 }
 
+input[type="radio"]:after {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  top: -3px;
+  left: -1px;
+  position: relative;
+  background-color: #d1d3d1;
+  content: "";
+  display: inline-block;
+  border: 2px solid #d1d3d1;
+}
+
+input[type="radio"]:checked:after {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  top: -3px;
+  left: -1px;
+  position: relative;
+  background-color: #ff6b82;
+  display: inline-block;
+  border: 2px solid #ff6b82;
+}
 .unit {
   font-size: 18px;
   font-weight: bold;
   font-family: sans-serif;
+  margin-left: 10px;
+  position: relative;
+  top: -7px;
 }
 .legend {
   position: absolute;
   top: -2px;
-  left: 280px;
+  left: 300px;
   text-align: center;
   width: 150px;
   padding: 5px 0;
@@ -71,7 +97,6 @@
 .dropdownSection {
   display: flex;
   gap: 10px;
-  /* display: none; */
 }
 .dropDownSection {
   display: none;
@@ -94,11 +119,15 @@
   color: white;
   padding: 2px 5px;
   font-family: sans-serif;
+  position: relative;
+  top: -7px;
 }
 .price {
   float: right;
   margin-left: 120px;
   font-family: sans-serif;
+  position: relative;
+  top: -7px;
 }
 
 .discountPrice {
