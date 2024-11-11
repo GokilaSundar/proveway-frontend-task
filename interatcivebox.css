@@ -3,10 +3,6 @@
   justify-content: center;
   align-items: center;
 }
-.heading {
-  display: grid;
-  justify-content: center;
-}
 .boxLine {
   border: 1px solid rgb(213, 209, 209);
   margin: 10px;
@@ -78,6 +74,34 @@ input[type="radio"]:checked:after {
   color: white;
   font-size: 16px;
 }
+.offer {
+  margin-left: 5px;
+  border: 1px solid #ff6b82;
+  border-radius: 3px;
+  background-color: #ff6b82;
+  color: white;
+  padding: 2px 5px;
+  font-family: sans-serif;
+  position: relative;
+  top: -7px;
+}
+.price {
+  float: right;
+  margin-left: 120px;
+  font-family: sans-serif;
+  position: relative;
+  top: -7px;
+}
+.discountPrice {
+  font-size: 20px;
+  font-weight: 600;
+}
+.actualPrice {
+  text-decoration: line-through;
+  margin-top: 5px;
+  font-size: 15px;
+  color: rgb(188, 187, 187);
+}
 .dropdownTitle {
   font-family: sans-serif;
   display: flex;
@@ -100,7 +124,6 @@ input[type="radio"]:checked:after {
 .dropDownSection {
   display: none;
 }
-
 .radioboxContainer
   input[type="radio"]:checked
   + label
@@ -109,17 +132,6 @@ input[type="radio"]:checked:after {
   + .dropDownSection {
   display: block;
   margin-top: 20px;
-}
-.offer {
-  margin-left: 5px;
-  border: 1px solid #ff6b82;
-  border-radius: 3px;
-  background-color: #ff6b82;
-  color: white;
-  padding: 2px 5px;
-  font-family: sans-serif;
-  position: relative;
-  top: -7px;
 }
 .price {
   float: right;
@@ -145,12 +157,14 @@ input[type="radio"]:checked:after {
   align-items: flex-start;
   gap: 120px;
 }
-
 .size,
 .color {
   padding-right: 35px;
   padding-top: 4px;
   padding-bottom: 4px;
+}
+.freeDeleivery {
+  color: #ff6b82;
 }
 .totalDelivery {
   display: flex;
@@ -158,9 +172,6 @@ input[type="radio"]:checked:after {
   font-family: "Arial", sans-serif;
   font-size: 18px;
   justify-content: space-between;
-}
-.freeDeleivery {
-  color: #ff6b82;
 }
 .button {
   display: flex;
@@ -179,4 +190,83 @@ input[type="radio"]:checked:after {
 }
 .plus {
   font-size: 25px;
+}
+
+@media only screen and (max-width: 700px) {
+  .headingContent {
+    position: relative;
+    font-family: "Arial", sans-serif;
+    text-align: center;
+    color: #ff6b82;
+    font-weight: 600;
+    top: -25px;
+    margin-left: 65px;
+    width: 250px;
+    font-size: 25px;
+    background-color: white;
+  }
+  .radioboxContainer {
+    position: relative;
+    border: 2px solid rgb(213, 209, 209);
+    padding: 40px 20px;
+    margin: 10px;
+    cursor: pointer;
+  }
+  .price {
+    float: right;
+    margin-left: 50px;
+    font-family: sans-serif;
+    position: relative;
+  }
+  .legend {
+    position: absolute;
+    top: -2px;
+    left: 180px;
+    text-align: center;
+    width: 150px;
+    padding: 5px 0;
+    border: 1px solid #ff6b82;
+    border-radius: 4px;
+    background-color: #ff6b82;
+    font-weight: bold;
+    font-family: "Arial", sans-serif;
+    color: white;
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .headingContent {
+    position: relative;
+    font-family: "Arial", sans-serif;
+    text-align: center;
+    color: #ff6b82;
+    font-weight: 600;
+    top: -25px;
+    margin-left: 50px;
+    width: 250px;
+    font-size: 25px;
+    background-color: white;
+  }
+  .price {
+    float: right;
+    margin-left: 25px;
+    font-family: sans-serif;
+    position: relative;
+  }
+  .legend {
+    position: absolute;
+    top: -2px;
+    left: 150px;
+    text-align: center;
+    width: 150px;
+    padding: 5px 0;
+    border: 1px solid #ff6b82;
+    border-radius: 4px;
+    background-color: #ff6b82;
+    font-weight: bold;
+    font-family: "Arial", sans-serif;
+    color: white;
+    font-size: 16px;
+  }
 }
