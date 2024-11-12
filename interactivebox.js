@@ -5,10 +5,6 @@ radiobutton.forEach((radio, index) => {
   const totals = document.querySelector(".total");
 
   radio.addEventListener("change", () => {
-    radioboxes.forEach((radiobox) => {
-      radiobox.style.border = "2px solid #e3e3e3";
-      radiobox.style.backgroundColor = "";
-    });
     if (radio.checked && index === 1) {
       radioboxes[1].style.border = "2px solid #ff6b82";
       radioboxes[1].style.backgroundColor = "#fff9fa";
@@ -17,14 +13,6 @@ radiobutton.forEach((radio, index) => {
       const selectedPrice =
         discountPrices[index].textContent.match(/[\d.]+/)[0];
       totals.innerHTML = `Total: $${selectedPrice} USD`;
-      console.log(
-        totals,
-        radio,
-        "radio",
-
-        index,
-        radio.checked
-      );
     }
   });
 });
